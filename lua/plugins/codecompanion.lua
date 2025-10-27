@@ -10,7 +10,7 @@ return {
             return require("codecompanion.adapters").extend("openai_compatible", {
               env = {
                 api_key = os.getenv "CODECOMPANION_OPENAI_API_KEY",
-                url = "https://llm.ai.himax.com.tw",
+                url = os.getenv "CODECOMPANION_OPENAI_API_URL",
               },
             })
           end,
