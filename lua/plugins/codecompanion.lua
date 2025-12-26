@@ -20,13 +20,13 @@ return {
         chat = {
           adapter = {
             name = "openai_compatible",
-            model = "openai/gpt-oss-120b",
+            model = os.getenv "CODECOMPANION_OPENAI_API_MODEL_NAME",
           },
         },
         inline = {
           adapter = {
             name = "openai_compatible",
-            model = "openai/gpt-oss-120b",
+            model = os.getenv "CODECOMPANION_OPENAI_API_MODEL_NAME",
           },
         },
       },
